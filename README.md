@@ -1,7 +1,9 @@
-MapMyEvents_web is a web implemented (in Flask) Python 3 script that maps events along a route or local events.
-TMapMyEvents is available on mapmyevents.pythonanywhere.com at least till June 25th 2018. 
+MapMyEvents_web is a web implemented (in Flask) Python 3 (3.6.4) script that maps events
+ along a route (or for a single location).
 
-Steps of the Python script:
+Authors: Vasily Kerov (Python)/Alina Shybayeva(Flask/JavaScript/web).
+
+The flow of the Python script:
 1. Get trip origin and destination, trip dates, and the keyword from the web page.
 2. Submit the origin and the destination to Google Map Directions API and get directions.
 3. Parse directions to optimize the route for the next API call to Eventbrite for events.
@@ -9,9 +11,6 @@ Steps of the Python script:
 5. Save them to JSON.
 6. Map events using Google Maps JavaScript API.
 (upon clicking on the markers an info window pops up with the details of the event)
-
-
-Authors: Vasily Kerov (Python)/Alina Shybayeva(Flask/JavaScript/web).
 
 Install steps:
 
@@ -25,3 +24,5 @@ Install steps:
 8. (venv) $ export FLASK_APP=eventbrite-googlemap.py  
 9. (venv) $ pip install flask-wtf requests flask_googlemaps flask_cache
 10. (venv) $ flask run
+
+MapMyEvents is currently available on mapmyevents.pythonanywhere.com .
