@@ -20,8 +20,8 @@ def CreateJSON(s,e,k,dt_start,dt_end):
     start_date_time_end = start_date_time_end + 'T23:00:00'
 
     #APIkeys:
-    goog_map_directions_api_key = 'AIzaSyDhlt9FO1gnICtCt-rCKuph8ux4WWFzTE0'
-    eventbright_api_key = 'TZCRCUITRNKQZFMSWHZ4'
+    goog_map_directions_api_key = 'yourGoogleMapsDirectionsAPIkey'
+    eventbright_api_key = 'yourEventbriteAPIkey'
 
     """
     2. Get directions via Google Directions API (as JSON)
