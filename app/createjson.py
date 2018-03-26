@@ -266,7 +266,7 @@ def CreateJSON(s,e,k,dt_start,dt_end):
                 description_raw = data['events'][event_num]['description']['text']
                 if description_raw != None:
                     description = ' '.join(description_raw.split())
-                    description = ((description[:110] + '..') if len(description) > 110 else description)
+                    description = ((description[:140] + '..') if len(description) > 140 else description)
                 else:
                     description = 'No description_n'
             except (RuntimeError, TypeError, NameError):
@@ -352,7 +352,7 @@ def CreateJSON(s,e,k,dt_start,dt_end):
         list_of_lists_events = list_of_lists_events[1:200]
     elif len(list_of_lists_events) == 1:
         print("No events found.")
-        return None    
+        return None
 
     """
     5. Create a JSON file for mapping by Google Maps JavaScript.
